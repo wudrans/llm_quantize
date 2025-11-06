@@ -1,0 +1,4 @@
+
+dataset_path: /data/wlj/datasets/Text/ultrachat_200k/data
+saved_root: /data/wlj/pretrained/Qwen_quantize-awq-sym
+pretrained_path: /data/wlj/pretrained/Qwen
