@@ -11,6 +11,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "../"))
 
 from utils.file_utils import get_subfolder, get_exclude_list
 from quantize.quan_llmcompressor import quantize_llmcompressor
+from quantize.quan_autoawq import quantize_autoawq
 from utils.log import logger
 from utils.yml_utils import yaml_load
 
@@ -50,4 +51,5 @@ if __name__ == '__main__':
         os.makedirs(saved_path, exist_ok=True)
 
         quantize_llmcompressor(model_path, dataset_path, saved_path, dataset_format="parquet")
+
     
